@@ -15,9 +15,9 @@ else:
     print("Ви неповнолітній!")
 
 # c
-Number3 = int(input("Type in the R of a circle: "))
+Number3 = float(input("Type in the R of a circle: "))
 pi = 3.14
-l = Number3 * pi
+l = 2 * Number3 * pi
 s = Number3 ** 2 * pi
 print(l)
 print(s)
@@ -33,7 +33,7 @@ else:
     print(b)
 
 # 2
-x, y = map(int, input().split(" "))
+x, y = map(float, input().split(" "))
 if x > 0 and y > 0:
     print("I")
 elif x < 0 and y > 0:
@@ -46,5 +46,14 @@ else:
     print("I dunno, middle?")
 
 # 3
-age = int(min(input("Please type in your age:"), 120))
-print(age, "рік")
+age = int(min(int(input("Please type in your age:")), 120))
+if 11 <= age % 100 <= 14:
+    word = "років"
+elif age % 10 == 1:
+    word = "рік"
+elif 2 <= age % 10 <= 4:
+    word = "роки"
+else:
+    word = "років"
+
+print(age, word)
