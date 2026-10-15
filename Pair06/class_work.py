@@ -27,7 +27,7 @@ import tkinter as Tk
 # selected = random.choice(numbers)
 # print(f"Selection from that: {selected}")
 
-# print(f"Today: {date.today}")
+# print(f"Today: {date.today()}")
 
 # print(demo.square(5))
 # print(demo.is_even(7))
